@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Shorts - Infos & Transcription</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Shorts Info & Transcription</h1>
+      <button id="themeToggle" aria-label="Changer thème">🌙</button>
+    </header>
+    
+    <label for="videoUrl">Collez le lien YouTube Short :</label>
+    <input type="text" id="videoUrl" placeholder="https://youtu.be/xxxxxxx" />
+    <button id="fetchBtn">Obtenir infos</button>
+    
+    <div id="loading" class="hidden">Chargement...</div>
+
+    <section id="videoInfo" class="hidden">
+      <h2 id="videoTitle"></h2>
+      <img id="thumbnail" alt="Miniature" />
+      <button id="downloadBtn">Télécharger la miniature</button>
+
+      <h3>Transcription :</h3>
+      <pre id="transcript">...</pre>
+
+      <button id="translateBtn">Traduire en français</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
